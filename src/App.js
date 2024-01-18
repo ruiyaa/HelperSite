@@ -1,25 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import "./article.css"
+import MainContents from './components/MainContents';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
+// import Manufest from "./components/manufest.js"
+// import Sidebar from './components/sidebarr';
+import Drive from "./components/appuse/drive.js"
+import Meet from './components/appuse/meet';
+import Form from './components/appuse/form';
+import Chat from './components/appuse/chat';
+import Spreadsheet from './components/appuse/Spreadsheet';
+import Cpp from './components/programming/Cpp';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <div>
+          <Routes>
+            <Route exact path="/" element={<MainContents/>}/>
+            <Route path="/drive" element={<Drive/>}/>
+            <Route path="/meet" element={<Meet/>}/>
+            <Route path="/form" element={<Form/>}/>
+            <Route path="/chat" element={<Chat/>}/>
+            <Route path="/spreadsheet" element={<Spreadsheet/>}/>
+            <Route path="/c++" element={<Cpp/>}/>
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
+
 export default App;
+{/* <MainContents/> */}
+{/* <Manufest />
+<Sidebar /> */}
+{/* <Route path="/" component={MainContents}/>  
+<Route path="/drive" component={Drive}/> */}

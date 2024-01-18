@@ -1,38 +1,148 @@
-.App {
+.App{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+  
+a {
+  text-decoration: none; 
+  color: blue; 
+}
+
+a.no-style {
+  color: black;
+}
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.Sidebar{
+  height: 100%;
+  width: 22%;
+  position: fixed;
+  top:0;
+  background-color: antiquewhite;
+  z-index: 1;
+}
+
+.SidebarList{
+  height: auto;
+  padding: 0;
+  width: 100%;
+}
+
+/* .SidebarList #active{
+  background-color: rgb(246, 204, 149);
+} */
+
+.SidebarList .row {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+}
+
+.SidebarList .row:hover{
+  cursor: pointer;
+  background-color: rgb(246, 204, 149);
+}
+
+/* manufest */
+
+.decla {
+  position: absolute;
+  height:auto;
+  right: 0%;
+  top: 0%;
+  width: 78%;
+  padding-top: 50px;
+}
+
+#mantitle,#manmain{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#manmain{
+  color: gray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#appuse{
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.apptitle{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  color: black;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.appcontents{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.appcont{
+  background-color: rgb(252, 178, 117);
+  width:28%;
+  margin: 2%;
+  border-radius: 0.5rem;
+}
+
+.appcont:hover{
+  cursor: pointer;
+  background-color: rgb(255, 144, 53);
+}
+
+.appconttitle{
+  display: flex;
+  color: black;
+  justify-content: center;
+  margin-bottom: 10%;
+  font-weight: bold;
+}
+
+.appcontpic{
+  margin-top: 10%;
+  margin-bottom: 2%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child-image {
+  width:50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+#programming{
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.procont{
+  background-color: rgb(86, 176, 255);
+  width:28%;
+  margin: 2%;
+  border-radius: 0.5rem;
+}
+
+.procont:hover{
+  cursor: pointer;
+  background-color: rgb(13, 142, 255);
 }
