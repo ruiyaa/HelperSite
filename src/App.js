@@ -18,7 +18,7 @@ import Cpp from './components/programming/Cpp';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/HelperSite">
       <div className="App">
         <div>
           <Routes>
