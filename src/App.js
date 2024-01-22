@@ -6,8 +6,6 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-// import Manufest from "./components/manufest.js"
-// import Sidebar from './components/sidebarr';
 import Drive from "./components/appuse/drive.js"
 import Meet from './components/appuse/meet';
 import Form from './components/appuse/form';
@@ -21,7 +19,7 @@ function App() {
     <Router basename="/HelperSite">
       <div className="App">
         <div>
-          <Routes>
+          <Routes>                                    
             <Route exact path="/" element={<MainContents/>}/>
             <Route path="/drive" element={<Drive/>}/>
             <Route path="/meet" element={<Meet/>}/>
